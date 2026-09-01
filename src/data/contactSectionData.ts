@@ -1,9 +1,9 @@
 import type { SectionHeader } from '@/types/sectionHeader';
 import devWorkingContactSection from '@/assets/images/dev/devWorkingContactSection.webp';
 
-export type Label = 'Name' | 'Email' | 'Subject' | 'Message';
+export type Label = 'Name' | 'Email' | 'Message';
 export type FieldType = 'text' | 'email' | 'textarea';
-export type Name = 'name' | 'email' | 'subject' | 'message';
+export type Name = 'name' | 'email' | 'message';
 
 export interface FormField {
   id: string;
@@ -34,28 +34,21 @@ export const contactSectionData: ContactSectionData = {
       id: 'name',
       label: 'Name',
       type: 'text',
-      placeholder: 'Enter your name?...',
+      placeholder: 'What should I call you?...',
       name: 'name',
     },
     {
       id: 'email',
       label: 'Email',
       type: 'email',
-      placeholder: 'Enter your email? ...',
+      placeholder: 'Where can I reach you? ...',
       name: 'email',
-    },
-    {
-      id: 'subject',
-      label: 'Subject',
-      type: 'text',
-      placeholder: 'Enter your subject?...',
-      name: 'name',
     },
     {
       id: 'message',
       label: 'Message',
       type: 'textarea',
-      placeholder: 'Enter your message',
+      placeholder: 'Tell me about your project or just say hi :) ...',
       name: 'message',
     },
   ],
