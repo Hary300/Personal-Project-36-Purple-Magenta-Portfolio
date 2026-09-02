@@ -31,7 +31,7 @@ const FaqSection = () => {
                 />
               </div>
               <div>
-                <AccordionTrigger className='text-lg text-neutral-25 lg:text-display-sm font-semibold'>
+                <AccordionTrigger className='text-lg text-neutral-25 lg:text-display-sm font-semibold cursor-pointer'>
                   {item.trigger}
                 </AccordionTrigger>
                 <AccordionContent className='text-sm text-neutral-400 lg:text-md'>

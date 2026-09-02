@@ -56,7 +56,7 @@ const TestimonialsSection = () => {
                 key={index}
                 className='basis-1/1 md:basis-1/2 xl:basis-1/3'
               >
-                <div className='relative p-4 rounded-2xl lg:gap-5 flex flex-col gap-15.25 border overflow-hidden'>
+                <div className='relative p-4 rounded-2xl lg:gap-5 flex flex-col gap-15.25 border overflow-hidden h-full'>
                   <div className='absolute inset-0 bg-radial-[100%_100%_at_5%_0] from-[#34144C] to-transparent form-0% to-80% -z-1' />
                   <div className='flex flex-col gap-6 lg:gap-8'>
                     <CompanyLogo />
