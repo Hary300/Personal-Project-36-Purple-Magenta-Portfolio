@@ -11,7 +11,7 @@ export interface TestimonialItem {
   companyLogo: ComponentType<SVGProps<SVGSVGElement>>;
   companyName: string;
   rating: number;
-  testimonial: string;
+  content: string;
   authorName: string;
   authorRole: string;
 }
@@ -25,7 +25,7 @@ export const testimonialsSectionData: TestimonialsSectionData = {
   header: {
     title: 'Trusted by Teams, Valued by Clients',
     subtitle:
-      'A few kind words from the people behind the projects Edwin helped bring to life.',
+      'A few kind words from the people behind the projects Hary helped bring to life.',
   },
   testimonials: [
     {
@@ -33,7 +33,7 @@ export const testimonialsSectionData: TestimonialsSectionData = {
       companyLogo: AirbnbIcon,
       companyName: 'Airbnb',
       rating: 5,
-      testimonial:
+      content:
         "Hary delivered clean and efficient code that made our app load faster and feel smoother. He's a pleasure to work with.",
       authorName: 'Sarah Liem',
       authorRole: 'Product Manager at Techlynk',
@@ -43,7 +43,7 @@ export const testimonialsSectionData: TestimonialsSectionData = {
       companyLogo: GoogleIcon,
       companyName: 'Google',
       rating: 5,
-      testimonial:
+      content:
         'Working with Hary was seamless. His eye for detail and mastery of pixel-perfect designs saved us weeks of development time.',
       authorName: 'Marcus Vance',
       authorRole: 'Lead Engineer at Coinbase',
@@ -53,8 +53,8 @@ export const testimonialsSectionData: TestimonialsSectionData = {
       companyLogo: SpotifyIcon,
       companyName: 'Spotify',
       rating: 5,
-      testimonial:
-        'Edwin transformed our complex design mockups into fully interactive, responsive components with incredible speed and accuracy.',
+      content:
+        'Hary transformed our complex design mockups into fully interactive, responsive components with incredible speed and accuracy.',
       authorName: 'Elena Rostova',
       authorRole: 'Design System Lead at Webflow',
     },
@@ -63,7 +63,7 @@ export const testimonialsSectionData: TestimonialsSectionData = {
       companyLogo: SlackIcon,
       companyName: 'Slack',
       rating: 5,
-      testimonial:
+      content:
         'Extremely reliable developer who consistently produces maintainable code and proactively solves frontend bottlenecks.',
       authorName: 'David Chen',
       authorRole: 'Engineering Manager at Stripe',
@@ -73,7 +73,7 @@ export const testimonialsSectionData: TestimonialsSectionData = {
       companyLogo: TrustPilotIcon,
       companyName: 'Trustpilot',
       rating: 5,
-      testimonial:
+      content:
         'His deep understanding of component architecture made integrating our design system effortless and bug-free.',
       authorName: 'Jessica Taylor',
       authorRole: 'Senior UX Designer at Figma',
