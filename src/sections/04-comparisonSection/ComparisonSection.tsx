@@ -16,7 +16,7 @@ const ComparisonSection = () => {
             <div
               key={column.id}
               className={cn(
-                'relative flex flex-col gap-3 p-4 lg:gap-4 lg:p-6 border rounded-2xl overflow-hidden',
+                'relative flex flex-1 flex-col gap-3 p-4 lg:gap-4 lg:p-6 border rounded-2xl overflow-hidden',
                 column.id === 'other' && 'bg-black'
               )}
             >

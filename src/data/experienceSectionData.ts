@@ -1,5 +1,3 @@
-import SparkleIcon from '@/assets/icons/react-components-icon/SparkleIcon';
-import type { ComponentType, SVGProps } from 'react';
 import trustPilot from '@/assets/images/company/trustpilot.svg';
 import airbnb from '@/assets/images/company/airbnb.svg';
 import google from '@/assets/images/company/google.svg';
@@ -15,7 +13,6 @@ export interface ExperienceItem {
 
 export interface ExperienceSectionData {
   header: SectionHeader;
-  bulletIcon: ComponentType<SVGProps<SVGSVGElement>>;
   experiences: ExperienceItem[];
 }
 
@@ -25,7 +22,6 @@ export const experienceSectionData: ExperienceSectionData = {
     subtitle:
       'Each role has sharpened my ability to build better digital experiences, faster.',
   },
-  bulletIcon: SparkleIcon,
   experiences: [
     {
       id: 'airbnb',
