@@ -1,4 +1,5 @@
 import Footer from '@/components/layouts/Footer';
+import Header from '@/components/layouts/Header';
 import HeroSection from '@/sections/01-heroSection';
 import StatsSection from '@/sections/02-statsSection';
 import SkillsSection from '@/sections/03-skillsSection';
@@ -12,6 +13,7 @@ import ContactSection from '@/sections/09-contactSection';
 function App() {
   return (
     <>
+      <Header />
       <HeroSection />
       <StatsSection />
       <SkillsSection />
@@ -20,8 +22,11 @@ function App() {
       <ProjectSection />
       <TestimonialsSection />
       <FaqSection />
-      <ContactSection />
-      <Footer />
+      <div className='relative max-w-360 mx-auto'>
+        <ContactSection />
+        <Footer />
+        <div className='absolute h-[90%] w-[90%] right-0 bottom-0 bg-linear-to-tl from-[#6A27A0]/50 to-transparent -z-1 from-0% to-60%'></div>
+      </div>
     </>
   );
 }

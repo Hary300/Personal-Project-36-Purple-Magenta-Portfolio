@@ -20,7 +20,7 @@ export interface NavbarData {
 
 export const navbarData: NavbarData = {
   logo: {
-    text: 'Hary300',
+    text: 'Hary',
     icon: SparkleIcon,
   },
   navItems: [

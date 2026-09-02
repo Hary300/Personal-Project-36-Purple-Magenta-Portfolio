@@ -9,11 +9,15 @@ const ContactSection = () => {
   const devImgAlt = contactSectionData.imageAlt;
   return (
     <SectionWrapper sectionId='contact'>
-      <div className='flex flex-col lg:flex-row border overflow-hidden rounded-tl-2xl rounded-tr-2xl lg:rounded-bl-2xl lg:rounded-tr-none '>
-        <div className='xl:flex-1'>
-          <img src={devImgSrc} alt={devImgAlt} />
+      <div className='flex flex-col lg:flex-row border overflow-hidden rounded-tl-2xl rounded-tr-2xl lg:rounded-bl-2xl lg:rounded-tr-none bg-black'>
+        <div className='lg:flex-1'>
+          <img
+            src={devImgSrc}
+            alt={devImgAlt}
+            className='w-full h-full object-cover'
+          />
         </div>
-        <div className='xl:flex-1 py-6 px-4 lg:py-8 lg:px-5 flex flex-col gap-6 lg:gap-8'>
+        <div className='lg:flex-1 py-6 px-4 lg:py-8 lg:px-5 flex flex-col gap-6 lg:gap-8'>
           <SectionTitle
             title={header.title}
             subtitle={header.subtitle}

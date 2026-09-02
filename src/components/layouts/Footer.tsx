@@ -1,5 +1,19 @@
 const Footer = () => {
-  return <footer>Footer</footer>;
+  return (
+    <footer className='lg:h-22 max-w-360 m-auto sm:px-10 lg:px-30 py-8 px-4 flex justify-center items-center gap-6 border-t border-white/10'>
+      <p className='text-neutral-25/60 text-sm lg:text-md'>
+        © 2026 Created by{' '}
+        <a
+          href='https://github.com/Hary300'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Hary300
+        </a>
+        . All rights reserved.
+      </p>
+    </footer>
+  );
 };
 
 export default Footer;

@@ -34,7 +34,7 @@ const InputField = <T extends FieldValues>({
           id={name}
           {...register(name)}
           placeholder={placeholder}
-          className='px-2 lg:px-4 border-b h-14 py-4 focus:outline-0'
+          className='px-2 lg:px-4 border-b py-4 focus:outline-0 h-16'
         ></textarea>
       ) : (
         <input
@@ -42,7 +42,7 @@ const InputField = <T extends FieldValues>({
           id={name}
           placeholder={placeholder}
           {...register(name)}
-          className='px-2 py-4 lg:px-4 border-b  focus:outline-0'
+          className='px-2 py-4 lg:px-4 border-b focus:outline-0 h-16'
         />
       )}
     </div>
