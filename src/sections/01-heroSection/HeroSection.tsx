@@ -2,7 +2,7 @@ import SparkleIcon from '@/assets/icons/react-components-icon/SparkleIcon';
 import SectionWrapper from '@/components/layouts/SectionWrapper';
 import { heroSectionData } from '@/data/heroSectionData';
 import badge from '@/assets/images/badge.png';
-import backgroundImg from '@/assets/images/background/purpleMagentaBackground.png';
+import backgroundImg from '@/assets/images/background/purpleMagentaBackground.webp';
 import gridPattern from '@/assets/images/background/gridPattern.png';
 import SocialMedia from '@/components/shared/SocialMedia';
 import { FaArrowDown } from 'react-icons/fa';

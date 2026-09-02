@@ -5,7 +5,7 @@ import sequalizer from '@/assets/icons/tech/sequalize.png';
 import ts from '@/assets/icons/tech/typescript.png';
 import mongodb from '@/assets/icons/tech/mongodb.png';
 import type { SectionHeader } from '@/types/sectionHeader';
-import PurpleMagentaBackground from '@/assets/images/background/purpleMagentaBackground.png';
+import PurpleMagentaBackground from '@/assets/images/background/purpleMagentaBackground.webp';
 
 export interface SkillItem {
   id: string;

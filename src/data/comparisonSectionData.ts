@@ -2,6 +2,7 @@ import SparkleIcon from '@/assets/icons/react-components-icon/SparkleIcon';
 import type { SectionHeader } from '@/types/sectionHeader';
 import type { ComponentType, SVGProps } from 'react';
 import { RxCross2 } from 'react-icons/rx';
+import portraitBg from '@/assets/images/background/portraitPurpleMagentaBackground.webp';
 
 export interface ComparisonFeature {
   id: string;
@@ -9,18 +10,17 @@ export interface ComparisonFeature {
 }
 
 export interface ComparisonColumn {
+  id: 'other' | 'withMe';
   title: string;
   icon: ComponentType<SVGProps<SVGSVGElement>> | string;
   isHighlighted: boolean;
   features: ComparisonFeature[];
+  bgImage?: string;
 }
 
 export interface ComparisonSectionData {
   header: SectionHeader;
-  columns: {
-    withMe: ComparisonColumn;
-    other: ComparisonColumn;
-  };
+  columns: ComparisonColumn[];
 }
 
 export const comparisonSectionData: ComparisonSectionData = {
@@ -29,8 +29,9 @@ export const comparisonSectionData: ComparisonSectionData = {
     subtitle:
       'Make the right choice for interfaces that are fast, reliable, and visually sharp.',
   },
-  columns: {
-    withMe: {
+  columns: [
+    {
+      id: 'withMe',
       title: 'With Me',
       icon: SparkleIcon,
       isHighlighted: true,
@@ -43,8 +44,10 @@ export const comparisonSectionData: ComparisonSectionData = {
         { id: 'responsive', text: 'Responsive Website' },
         { id: 'ui-design', text: 'UI Design Proficiency (Figma)' },
       ],
+      bgImage: portraitBg,
     },
-    other: {
+    {
+      id: 'other',
       title: 'Other',
       icon: RxCross2,
       isHighlighted: false,
@@ -58,5 +61,5 @@ export const comparisonSectionData: ComparisonSectionData = {
         { id: 'ui-design', text: 'UI Design Proficiency (Figma)' },
       ],
     },
-  },
+  ],
 };
