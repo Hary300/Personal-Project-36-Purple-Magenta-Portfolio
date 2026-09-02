@@ -83,7 +83,7 @@ const Header = () => {
         ))}
       </ul>
       <div className='hidden lg:block w-full max-w-41.75'>
-        <CtaButton closeMenu={() => setIsShownMenu(false)} />
+        <CtaButton />
       </div>
     </header>
   );

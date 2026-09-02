@@ -5,6 +5,7 @@ import sequalizer from '@/assets/icons/tech/sequalize.png';
 import ts from '@/assets/icons/tech/typescript.png';
 import mongodb from '@/assets/icons/tech/mongodb.png';
 import type { SectionHeader } from '@/types/sectionHeader';
+import PurpleMagentaBackground from '@/assets/images/background/purpleMagentaBackground.png';
 
 export interface SkillItem {
   id: string;
@@ -13,6 +14,7 @@ export interface SkillItem {
 }
 
 export interface QuoteCard {
+  bgImage: string;
   quote: string;
   author: string;
   ctaButton: {
@@ -42,6 +44,7 @@ export const skillsSectionData: SkillsSectionData = {
     { id: 'mongodb', name: 'Mongo DB', icon: mongodb },
   ],
   quoteCard: {
+    bgImage: PurpleMagentaBackground,
     quote:
       'Programming is the art of telling another human what you want the computer to do.',
     author: 'Donald Knuth',
