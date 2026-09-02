@@ -1,33 +1,38 @@
 import devCloseUp from '@/assets/images/dev/devCloseUp.webp';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTiktok,
+} from 'react-icons/fa';
+import type { IconType } from 'react-icons/lib';
 
 export interface SocialLink {
   platform: string;
   url: string;
-  icon: string;
+  icon: IconType;
 }
 
 export interface AboutSection {
+  name: string;
+  firstName: string;
+  lastName: string;
   title: string;
   description: string;
 }
 
 export interface HeroSectionData {
-  name: string;
-  firstName: string;
-  lastName: string;
   profileImage: string;
-  badgeText: string;
   about: AboutSection;
   socialLinks: SocialLink[];
 }
 
 export const heroSectionData: HeroSectionData = {
-  name: 'HARY300',
-  firstName: 'HARY',
-  lastName: '300',
   profileImage: devCloseUp,
-  badgeText: 'Expert for Frontend Developer',
   about: {
+    name: 'HARY300',
+    firstName: 'HARY',
+    lastName: '300',
     title: 'About me',
     description:
       'Passionate about frontend development, I focus on crafting digital products.',
@@ -36,22 +41,22 @@ export const heroSectionData: HeroSectionData = {
     {
       platform: 'facebook',
       url: 'https://facebook.com',
-      icon: 'Facebook',
+      icon: FaFacebookF,
     },
     {
       platform: 'instagram',
       url: 'https://instagram.com',
-      icon: 'Instagram',
+      icon: FaInstagram,
     },
     {
       platform: 'linkedin',
       url: 'https://linkedin.com',
-      icon: 'Linkedin',
+      icon: FaLinkedinIn,
     },
     {
       platform: 'tiktok',
       url: 'https://tiktok.com',
-      icon: 'Tiktok',
+      icon: FaTiktok,
     },
   ],
 };

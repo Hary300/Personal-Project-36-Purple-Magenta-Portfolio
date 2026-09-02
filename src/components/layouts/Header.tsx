@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        'fixed w-full max-w-360 left-1/2 -translate-x-1/2 flex flex-col gap-10.5 lg:flex-row lg:justify-between lg:items-center pt-6.5 pb-6.5 items-start z-50 px-4 sm:px-10 lg:px-15 xl:px-30 transition-all duration-50 ease-in-out ',
+        'fixed w-full max-w-360 left-1/2 -translate-x-1/2 flex flex-col gap-10.5 lg:flex-row lg:justify-between lg:items-center pt-6.5 pb-6.5 items-start z-50 px-4 sm:px-10 lg:px-15 xl:px-30 ',
         isMenuShown ? 'h-screen bg-black' : 'h-22',
         isScroll && 'backdrop-blur-2xl'
       )}
